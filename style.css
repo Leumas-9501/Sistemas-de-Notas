@@ -1,0 +1,192 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f5;
+    color: #263238;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* ==============================
+   CARD PRINCIPAL
+============================== */
+
+.login {
+    width: 100%;
+    max-width: 400px;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px #0002;
+}
+
+
+/* ==============================
+   TÍTULOS
+============================== */
+
+.login h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #1976d2;
+
+    font-size: 28px;
+}
+
+
+/* ==============================
+   FORMULÁRIOS
+============================== */
+
+#formLogin,
+#formAluno {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* ==============================
+   CAMPOS DE TEXTO
+============================== */
+
+input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #cfd8dc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #1976d2;
+
+    box-shadow: 0 0 0 3px #1976d222;
+}
+
+
+/* ==============================
+   BOTÕES
+============================== */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1976d2;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* ==============================
+   MENSAGENS
+============================== */
+
+#mensagem {
+    text-align: center;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   ÁREA DO ALUNO
+============================== */
+
+#nome,
+#nota {
+    font-weight: bold;
+}
+
+.login > p {
+    margin-bottom: 15px;
+
+    font-size: 17px;
+}
+
+
+/* ==============================
+   BOTÃO SAIR
+============================== */
+
+#sair {
+    margin-top: 15px;
+
+    background: #e53935;
+}
+
+#sair:hover {
+    background: #c62828;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 450px) {
+
+    .login {
+        padding: 25px;
+    }
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+}

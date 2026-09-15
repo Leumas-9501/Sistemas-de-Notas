@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Professor</title>
+
+    <link rel="stylesheet" href="Estilos - CSS/style.css">
+</head>
+
+<body>
+
+    <main class="login">
+        <h1>Área do Professor</h1>
+
+        <form id="formAluno">
+
+            <input type="text" id="nome" placeholder="Nome do aluno" required>
+
+            <input type="email" id="email" placeholder="E-mail do aluno" required>
+
+            <input type="password" id="senha" placeholder="Senha do aluno" required>
+
+            <input type="number" id="nota" placeholder="Nota final" min="0" max="10" step="0.1" required>
+
+            <button type="submit">Cadastrar aluno</button>
+
+        </form>
+
+        <p id="mensagem"></p>
+
+        <button id="sair">Sair</button>
+    </main>
+
+    <script type="module" src="JavaScript - JS/professor.js"></script>
+
+</body>
+
+</html>
